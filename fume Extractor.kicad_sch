@@ -2488,6 +2488,12 @@
 		(uuid "1b417d5a-60ab-46b4-98b1-674266a7c0dc")
 	)
 	(junction
+		(at 191.77 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28cc1a75-83bb-477f-8338-3b45756dee60")
+	)
+	(junction
 		(at 127 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2506,22 +2512,10 @@
 		(uuid "52b9ae55-1a54-4bfc-bce5-a78c574be9cd")
 	)
 	(junction
-		(at 190.5 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5a1d66f4-ec39-4970-8fa0-f215ec202b85")
-	)
-	(junction
 		(at 151.13 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f5eef6d-11d8-48ba-8c11-f4ea9b2a52d3")
-	)
-	(junction
-		(at 179.07 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5202979-31dd-4828-a8c1-0385d6a76fee")
 	)
 	(junction
 		(at 127 76.2)
@@ -2540,6 +2534,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e988e350-3ebd-4d61-a67d-a977c452a232")
+	)
+	(junction
+		(at 179.07 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fda3608e-38d6-469a-890a-03af3d9d8071")
 	)
 	(no_connect
 		(at 151.13 66.04)
@@ -2667,7 +2667,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 77.47) (xy 190.5 71.12)
+			(xy 191.77 77.47) (xy 191.77 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2797,7 +2797,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 71.12) (xy 190.5 71.12)
+			(xy 179.07 71.12) (xy 191.77 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2876,7 +2876,7 @@
 				)
 			)
 		)
-		(property "Value" "LED_5mm"
+		(property "Value" "LED_3mm"
 			(at 142.494 85.852 0)
 			(hide yes)
 			(show_name no)
@@ -2887,7 +2887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 145.796 79.756 0)
 			(hide yes)
 			(show_name no)
@@ -2927,7 +2927,7 @@
 			(uuid "ad5f796b-ca29-4ef4-a9e6-1bfd61731df2")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "D1")
 					(unit 1)
@@ -2937,7 +2937,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 186.69 77.47 270)
+		(at 186.69 77.47 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2947,7 +2948,7 @@
 		(dnp no)
 		(uuid "2d75721e-dfb1-4374-a5c1-6cd59a8444f5")
 		(property "Reference" "RV1"
-			(at 186.436 73.152 90)
+			(at 186.944 73.152 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2966,7 +2967,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x03_P4.6mm_D0.9mm_OD2.1mm"
 			(at 186.69 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3042,7 +3043,7 @@
 			(uuid "0fd3b5e1-2539-442c-a2ae-3895f568c066")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "RV1")
 					(unit 1)
@@ -3123,7 +3124,7 @@
 			(uuid "f544e20f-5253-4b8f-a62f-dc44b4b9fc16")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "C1")
 					(unit 1)
@@ -3200,7 +3201,7 @@
 			(uuid "517b3ddf-cbc9-494c-a3ce-2dcb4ad677b8")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "#PWR01")
 					(unit 1)
@@ -3211,6 +3212,7 @@
 	(symbol
 		(lib_id "User_Passives:100SP1T1B4M2QE")
 		(at 143.51 68.58 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3218,10 +3220,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "470539c1-42b9-4f3f-8011-c745354869e6")
 		(property "Reference" "SW1"
-			(at 143.51 63.5 0)
+			(at 143.51 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3231,7 +3232,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 143.51 64.77 0)
+			(at 143.51 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3241,7 +3242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "User_Passives:SW_SPDT_100SP1T1B4M2QE"
+		(property "Footprint" "PCM_4ms_Switch:Switch_Toggle_SPDT_SubMini"
 			(at 143.51 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3418,7 +3419,7 @@
 			(uuid "9d28f52b-2e9b-4b1e-baf3-b2dba463f465")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "SW1")
 					(unit 1)
@@ -3459,7 +3460,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.127sqmm_1x02_P3.7mm_D0.48mm_OD1mm"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 127 72.136 90)
 			(hide yes)
 			(show_name no)
@@ -3532,7 +3533,7 @@
 			(uuid "d461412c-e550-497c-8f94-7ac8aedd2567")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "BT1")
 					(unit 1)
@@ -3609,7 +3610,7 @@
 			(uuid "b6446102-8f4c-48fb-9562-3b7485b802f3")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "#FLG04")
 					(unit 1)
@@ -3688,7 +3689,7 @@
 			(uuid "23c763b3-9fe4-4b81-bc98-74df838f0583")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "#FLG01")
 					(unit 1)
@@ -3771,7 +3772,7 @@
 			(uuid "f4bdbf54-1f41-4090-a7d6-0255d30aaf50")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "U1")
 					(unit 1)
@@ -3852,7 +3853,7 @@
 			(uuid "9ec0b2b3-be85-418c-806c-ed52b95f11ac")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "J1")
 					(unit 1)
@@ -3969,7 +3970,7 @@
 			(uuid "0e6d4f09-eed0-47b1-9833-26fe46d2ea25")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "RV2")
 					(unit 1)
@@ -4047,7 +4048,7 @@
 			(uuid "04eb0227-4c9d-4850-834a-9d8bb00cb3be")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "#PWR02")
 					(unit 1)
@@ -4126,7 +4127,7 @@
 			(uuid "356a08ef-8d58-4a86-bf25-e7380f4bdc71")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "C2")
 					(unit 1)
@@ -4203,7 +4204,7 @@
 			(uuid "eb33c572-6430-4dcb-9835-d3659a85135f")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "#FLG03")
 					(unit 1)
@@ -4285,7 +4286,7 @@
 			(uuid "bcc28879-b07b-425b-ad81-c93a0504cd5c")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "R1")
 					(unit 1)
@@ -4393,7 +4394,7 @@
 			(uuid "9e6eb11a-ec1f-4f4e-b6e8-e94d098df5fe")
 		)
 		(instances
-			(project "kicadrt_analysis_fume Extractor"
+			(project "fume Extractor"
 				(path "/d6602a71-2883-441a-8964-9fddcde39fdc"
 					(reference "Q1")
 					(unit 1)
