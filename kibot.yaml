@@ -152,6 +152,7 @@ outputs:
     dir: '3D'
     options:
       view: top
+      output: 'render_top.png'
 
   - name: render_bottom
     comment: '3D render, bottom view'
@@ -159,6 +160,7 @@ outputs:
     dir: '3D'
     options:
       view: bottom
+      output: 'render_bottom.png'
 
   - name: manufacturing_zip
     comment: 'Zipped gerbers and drill files ready to send to a fab house'

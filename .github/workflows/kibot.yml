@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,7 +18,6 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_k10
         with:
           config: kibot.yaml
-          dir: output
           board: 'fume Extractor.kicad_pcb'
           schema: 'fume Extractor.kicad_sch'
 
@@ -23,4 +25,15 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: kibot-outputs
-          path: output
+          path: |
+            Manufacturing
+            Documentation
+            bom
+            3D
+
+      - name: Refresh interactive BOM and PCB renders
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: 'chore: refresh interactive BOM and PCB renders [skip ci]'
+          file_pattern: 'bom/ibom.html 3D/render_top.png 3D/render_bottom.png'
