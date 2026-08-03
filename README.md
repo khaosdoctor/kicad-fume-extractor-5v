@@ -5,6 +5,9 @@ L7805 linear regulator to drive a 5V fan through a BC337 transistor, with a
 potentiometer for speed control, a trimmer for calibration, a power switch and
 an LED indicator.
 
+This is my first electronics project, so it's a work in progress — expect
+multiple revisions as the design gets refined.
+
 ## Hardware overview
 
 | Ref  | Part                     | Function                        |
