@@ -36,4 +36,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'chore: refresh interactive BOM and PCB renders [skip ci]'
-          file_pattern: 'bom/ibom.html 3D/render_top.png 3D/render_bottom.png'
+          file_pattern: 'bom/* 3D/render_top.png 3D/render_bottom.png'
