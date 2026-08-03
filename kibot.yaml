@@ -139,7 +139,7 @@ outputs:
     type: ibom
     dir: 'bom'
     options:
-      name_format: 'ibom'
+      output: 'ibom.html'
 
   - name: step
     comment: '3D model in STEP format'
